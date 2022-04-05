@@ -26,6 +26,20 @@
   flex-direction: column;
   padding: 10px 0;
 }
+.left-container .filter-container .big-text{
+  font-size: 1.25em;
+}
+.left-container .filter-container .small-text{
+  font-size: 0.9em;
+}
+.left-container .filter-container .mid-text{
+  font-size: 0.98em;
+}
+.left-container .filter-container .small-text,
+.left-container .filter-container label {
+  color: gray;
+}
+
 .left-container .filter-container label {
   margin: 3px 0;
   width: max-content;
@@ -33,6 +47,12 @@
   border: none;
   /* border: 1px solid #ccc; */
   cursor: pointer;
+  font-size: 0.9em;
+}
+.left-container .filter-container label input{
+  margin-right: 5px;
+  height: 12px;
+  width: 12px;
 }
 .left-container .filter-container button {
   width: max-content;

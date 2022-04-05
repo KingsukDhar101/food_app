@@ -85,7 +85,9 @@ export default function FilterContent() {
   function handleSearch(e) {
     let { value } = e.target;
     console.log(value);
-    let arr = filtarr.filter((item) => item.title.toLowerCase().startsWith(value.toLowerCase()));
+    let arr = filtarr.filter((item) =>
+      item.title.toLowerCase().startsWith(value.toLowerCase())
+    );
     console.log(arr);
     setFiltarr(arr);
   }
@@ -109,7 +111,12 @@ export default function FilterContent() {
             Check multiple boxes below to narrow recipe search results:
           </p>
         </div>
-        <button onClick={handleAllProduct} style={{width:"max-content", padding:"10px"}}>All</button>
+        <button
+          onClick={handleAllProduct}
+          style={{ width: "max-content", padding: "10px" }}
+        >
+          All
+        </button>
         <div className="filter-container">
           <h3 className="mid-text">By Season:</h3>
           <label>
@@ -121,7 +128,7 @@ export default function FilterContent() {
               onChange={(e) => {
                 handleChange(e);
               }}
-            />{" "}
+            />
             Autumn
           </label>
           <label>
@@ -133,7 +140,7 @@ export default function FilterContent() {
               onChange={(e) => {
                 handleChange(e);
               }}
-            />{" "}
+            />
             Spring
           </label>
           <label>
@@ -145,7 +152,7 @@ export default function FilterContent() {
               onChange={(e) => {
                 handleChange(e);
               }}
-            />{" "}
+            />
             Summer
           </label>
           <label>
@@ -157,7 +164,7 @@ export default function FilterContent() {
               onChange={(e) => {
                 handleChange(e);
               }}
-            />{" "}
+            />
             Winter
           </label>
         </div>

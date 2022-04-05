@@ -6,12 +6,12 @@ export default function Card({ item }) {
   return (
     <div className="card-container">
       <img src={food_img} alt="" />
-      <div>{item.title}</div>
-      <div>{item.description}</div>
-      <div>{item.season}</div>
-      <div>{item.dietaryPreference}</div>
-      <div>{item.meal}</div>
-      <div>{item.type}</div>
+      <div className="title">{item.title}</div>
+      <div className="description">{item.description}</div>
+      <div className="smallText">{item.season}</div>
+      <div className="smallText">{item.dietary}</div>
+      <div className="smallText">{item.meal}</div>
+      <div className="smallText">{item.type}</div>
     </div>
   );
 }

@@ -7,13 +7,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  border-radius: 15px;
 }
-.card-container img{
+.card-container img {
   height: 50%;
   width: 100%;
   object-fit: cover;
   margin-bottom: 10px;
+  border-radius: 15px 15px 0 0;
 }
-.card-container div{
+.card-container div {
   margin: 2px 0;
+}
+
+.card-container .title {
+  font-size: 1.2em;
+
+}
+.card-container .description {
+}
+.card-container .smallText {
+  font-size: 0.8em;
+  color: gray;
 }

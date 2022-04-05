@@ -1,0 +1,74 @@
+.middlebar-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75em;
+  font-weight: 500;
+  padding: 0 20px;
+}
+.middlebar-container .logo {
+  /* border: 1px solid red; */
+  height: 70px;
+  display: flex;
+  align-items: center;
+  font-size: 1.4em;
+  letter-spacing: 5px;
+}
+
+.middlebar-container .box-container {
+  display: flex;
+  font-size: 0.85em;
+}
+.middlebar-container .box-container .favourites {
+  /* border: 1px solid red; */
+  padding: 0 20px;
+  border-right: 1px solid #ccc;
+}
+.middlebar-container .box-container .cart {
+  /* border: 1px solid red; */
+  padding: 0 20px;
+}
+
+.middlebar-container .search-container {
+  border: 1px solid #ccc;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  width: 500px;
+  margin: 0 40px;
+}
+.search-container .allcat {
+  font-size: 0.6em;
+  height: 80%;
+  width: max-content;
+  padding: 0 10px;
+  background-color: rgba(204, 204, 204, 0.466);
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+.search-container .input-container {
+  flex: 1;
+  /* border: 1px solid orchid; */
+  height: 100%;
+}
+.search-container .input-container input{
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding: 0 10px;
+  font-size: 0.85em;
+}
+.search-container .input-container input:focus{
+  outline: none;
+}
+.search-container .search-icon {
+  height: 100%;
+  width: 40px;
+  background-color: rgb(255, 217, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
